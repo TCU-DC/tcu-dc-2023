@@ -406,6 +406,10 @@ div#news-items-wrapper {
     margin: 3vmin 1rem 0;
 }
 
+.content.description a {
+    color: var(--blue);
+}
+
 .content > h1 {
     margin: 3vmin auto 0;
     max-width: 54rem;
