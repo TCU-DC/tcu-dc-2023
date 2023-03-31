@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>東京都市大学 デジタルコンテンツ研究会</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/top.css">
+    <link rel="stylesheet" href="style/header-footer.css">
+</head>
+<body>
+    <header id="header">
+        <a href="/"><img id="header-logo" class="header-item" src="img/logo.svg" alt="デジタルコンテンツ研究会 アイコン"></a>
+        <ul id="header-nav">
+            <li class="header-nav-item">
+                <a href="https://tcu-dc.net/about" target="_blank"><div>デジコンとは</div><span>About us</span></a>
+            </li>
+            <li class="header-nav-item">
+                <a href="https://tcu-dc.net/sns" target="_blank"><div>公式SNS</div><span>Official SNS</span></a>
+            </li>
+            <li class="header-nav-item">
+                <a href="https://tcu-dc.net/contact" target="_blank"><div>お問い合わせ</div><span>Contact</span></a>
+            </li>
+            <li id="header-join" class="header-nav-item">
+                <a href="https://tcu-dc.net/joinus/" target="_blank"><div>入会はこちら</div><span>Join us</span></a>
+            </li>
+        </ul>
+    </header>
+    <main>
+        <div id="digicon-logo">
+            <div onclick="pageScroll('videos')" class="light-blue has-content">
+                <img class="group-logo logo-movie" src="works/movie/dotpict_animation.gif" alt="動画班サムネ">
+                <h1>動画</h1>
+            </div>
+            <div onclick="pageScroll('illust')" class="light-blue has-content">
+                <img class="group-logo logo-illust" src="works/illust/6.jpg" alt="イラスト班サムネ">
+                <h1>イラスト</h1>
+            </div>
+            <div></div>
+            <div id="news-items-wrapper">
+                <div class="news-item">
+                    <img class="thumbnail" src="works/illust/1.png" alt="">
+                </div>
+                
+                <div class="news-item">
+                    <img class="thumbnail" src="works/illust/2.png" alt="">
+                </div>
+                
+                <div class="news-item">
+                    <img class="thumbnail" src="works/illust/3.jpg" alt="">
+                </div>
+                
+                <div class="news-item">
+                    <img class="thumbnail" src="works/illust/4.jpg" alt="">
+                </div>
+                <div class="news-item">
+                    <img class="thumbnail" src="works/illust/5.jpg" alt="">
+                </div>
+                <div class="news-item">
+                    <img class="thumbnail" src="works/illust/6.jpg" alt="">
+                </div>
+                <div class="news-item">
+                    <iframe class="thumbnail" src="https://www.youtube.com/embed/qboU19cj8qs?controls=0&autoplay=1&mute=1&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+                </div>
+                <div class="news-item">
+                    <iframe class="thumbnail" src="https://www.youtube.com/embed/oxaBs-w4Ros?controls=0&autoplay=1&mute=1&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+                </div>
+                <div class="news-item">
+                    <iframe class="thumbnail" src="https://www.youtube.com/embed/O9-KZiphhFo?controls=0&autoplay=1&mute=1&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+                </div>
+                <div class="news-item">
+                    <iframe class="thumbnail" src="https://www.youtube.com/embed/V_vJCMbCKag?controls=0&autoplay=1&mute=1&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+                </div>
+                <div class="news-item">
+                    <iframe class="thumbnail" src="https://www.youtube.com/embed/TZgkoF1BCFQ?controls=0&autoplay=1&mute=1&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+                </div>
+                <div class="news-item">
+                    <iframe class="thumbnail" src="https://www.youtube.com/embed/9hOUZECS6d0?controls=0&autoplay=1&mute=1&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+                </div>
+            </div>
+            <div onclick="pageScroll('programs')" class="light-blue has-content">
+                <img class="group-logo logo-programming" src="works/program/theme.png" alt="プログラミング班サムネ">
+                <h1>プログラミング</h1>
+            </div>
+            <div onclick="pageScroll('dtm')" id="dtm-play" class="light-blue has-content">
+                <div class="group-logo logo-dtm"></div>
+                <h1>DTM</h1>
+            </div>
+            <div class="light-blue"></div>
+            <div class="light-blue"></div>
+            <div></div>
+            <div class="blue"></div>
+            <div class="blue"></div>
+            <div></div>
+            <div onclick="link('https://tcu-dc.net/joinus/')" class="pink has-content">
+                <h1>入会はこちら</h1>
+            </div>
+            <div></div>
+            <div></div>
+            <div onclick="pageScroll('events')" class="blue has-content">
+                <h1>イベント</h1>
+            </div>
+        </div>
+        <!--
+        <div id="contents">
+            <div class="content-nav-wrapper">
+                <ul id="js-content-nav" class="content-nav">
+                    <li class="select" onclick="contentNavSelector(0)">イラスト班</li>
+                    <li onclick="contentNavSelector(1)">動画班</li>
+                    <li onclick="contentNavSelector(2)">DTM班</li>
+                    <li onclick="contentNavSelector(3)">プログラミング班</li>
+                    <li class="active-content-nav"></li>
+                    <li class="active-content"></li>
+                </ul>
+            </div>
+            <div class="content-wrapper">
+                <div id="content-illust">
+                    <p>イラストを制作する部門です。グラフィックソフトを用いてパソコンで絵を描きます。</p>
+                    <div class="works-wrapper">
+                        <img src="works/illust/IMG_2049.png" alt="イラスト">
+                        <p class="title">無題1</p>
+                        <p class="caption"></p>
+                    </div>
+                    <div class="works-wrapper">
+                        <img src="works/illust/IMG_2094.jpg" alt="イラスト">
+                        <p class="title">無題2</p>
+                        <p class="caption"></p>
+                    </div>
+                    <div class="works-wrapper">
+                        <img src="works/illust/IMG_2109.jpg" alt="イラスト">
+                        <p class="title">無題3</p>
+                        <p class="caption"></p>
+                    </div>
+                    <div class="works-wrapper">
+                        <img src="works/illust/IMG_2132.jpg" alt="イラスト">
+                        <p class="title">無題4</p>
+                        <p class="caption"></p>
+                    </div>
+                    <div class="works-wrapper">
+                        <img src="works/illust/IMG_1875.jpg" alt="イラスト">
+                        <p class="title">無題5</p>
+                        <p class="caption"></p>
+                    </div>
+                    <div class="works-wrapper">
+                        <img src="works/illust/IMG_1923.jpg" alt="イラスト">
+                        <p class="title">無題6</p>
+                        <p class="caption"></p>
+                    </div>
+                    <div class="works-wrapper">
+                        <img src="works/illust/260_20221001040509.png" alt="イラスト">
+                        <p class="title">無題7</p>
+                        <p class="caption"></p>
+                    </div>
+                    <div class="works-wrapper">
+                        <img src="works/illust/341_20221205175923.png" alt="イラスト">
+                        <p class="title">無題8</p>
+                        <p class="caption"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        -->
+        <div class="content">
+            <h1>Works</h1>
+            <h2 id="scroll-illust">Illust</h2>
+            <div class="works-wrapper">
+                <div class="works illust">
+                    <img src="works/illust/1.png" alt="">
+                </div>
+                <div class="works illust">
+                    <img src="works/illust/2.png" alt="">
+                </div>
+                <div class="works illust">
+                    <img src="works/illust/3.jpg" alt="">
+                </div>
+                <div class="works illust">
+                    <img src="works/illust/4.jpg" alt="">
+                </div>
+                <div class="works illust">
+                    <img src="works/illust/5.jpg" alt="">
+                </div>
+                <div class="works illust">
+                    <img src="works/illust/6.jpg" alt="">
+                </div>
+            </div>
+            <h2 id="scroll-videos">Videos</h2>
+            <div class="works-wrapper">
+                <div class="works video">
+                    <iframe src="https://www.youtube.com/embed/V_vJCMbCKag" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+                </div>
+                <div class="works video">
+                    <iframe src="https://www.youtube.com/embed/TZgkoF1BCFQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+                </div>
+                <div class="works video">
+                    <iframe src="https://www.youtube.com/embed/9hOUZECS6d0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+                </div>
+            </div>
+            <h2 id="scroll-dtm">DTM</h2>
+            <div class="works-wrapper">
+                <div class="works dtm">
+                    <div onclick="player(1)" class="dtm-player"></div>
+                </div>
+                <div class="works dtm">
+                    <div onclick="player(2)" class="dtm-player"></div>
+                </div>
+                <div class="works dtm">
+                    <div onclick="player(3)" class="dtm-player"></div>
+                </div>
+                <div class="works dtm">
+                    <div onclick="player(4)" class="dtm-player"></div>
+                </div>
+            </div>
+            <h2 id="scroll-programs">Programs</h2>
+            <div class="works-wrapper">
+                <div class="works program">
+                    <div class="program-video">
+                        <iframe src="https://www.youtube.com/embed/qboU19cj8qs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+                    </div>
+                    <div class="program-link">
+                        <a href="https://github.com/natyosu3/Tic-tac-toe--sanmoku-narabe" target="_blank">
+                            <img src="img/github-mark.svg" alt="github">
+                        </a>
+                    </div>
+                </div>
+                <div class="works program">
+                    <div class="program-video">
+                        <iframe src="https://www.youtube.com/embed/oxaBs-w4Ros" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+                    </div>
+                    <div class="program-link">
+                        <a href="https://github.com/natyosu3/discord-yomiage-bot" target="_blank">
+                            <img src="img/github-mark.svg" alt="github">
+                        </a>
+                    </div>
+                </div>
+                <div class="works program">
+                    <div class="program-video">
+                        <iframe src="https://www.youtube.com/embed/O9-KZiphhFo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content description">
+            <h1>デジコンとは</h1>
+            <p>
+                新入生の皆さん、こんにちは！私たちは、東京都市大学 デジタルコンテンツ研究会（デジコン）です。
+                <br>私たちの活動内容は主に、<span class="bold">デジタルツールを用いた創作活動</span> です！
+                
+            </p>
+            <p>
+                たとえば、
+            </p>
+                <ul>
+                    <li>音メディア系（DTM、ボーカロイド 、mix、音声、ラップなど）</li>
+                    <li>グラフィックス系（イラスト、デザイン、CGなど）</li>
+                    <li>映像系（動画、CG、アニメーション、トラッキングなど）</li>
+                    <li>Tech系（プログラミング、Web、ツール、AIなど）</li>
+                </ul>
+            <p>
+                の主要4領域が主な活動範囲です。
+            </p>
+            <h2>デジタルコンテンツ研究会で創作する意味</h2>
+            <p>
+                デジコンに所属して活動することで、同じ趣味の同級生や先輩たちと交流しながら、異なる領域の才能を持った人たちと合作することができたり、作品発表や講座などで教えあってモチベーションを高めたり、授業の相談をしたり、楽しくワイワイ創作活動ができます。
+
+                <br>さらに、デジコンという箱を利用して、
+                </p>
+            <ul>
+                <li>学内外のイベント</li>
+                <li>他団体からの依頼・交流</li>
+                <li>所有する共用ツールの利用</li>
+            </ul>
+            <p>
+                などなどさまざまな挑戦の機会や自分の才能を外部に発表したり誰かのために創る機会、さまざまな恩恵が受けられたりします！
+                <br>もちろん、初心者も大歓迎です！
+
+                <br>何かを創ることに興味がある人、アニメやゲームが好きな人、友達を作りたい人など、
+
+                <br>さまざまな才能を持った人たちと一緒にこれから自分を高めたい人などなど。
+
+                <br>何かを始めるのに、遅いなんてことはありません！
+            </p>
+            <h2>活動について</h2>
+            <p>
+                デジコンでは、
+            </p>
+            <ul>
+                <li>週に1回の作品紹介（毎週木曜20:30~オンラインツールDiscord）</li>
+                <li>月一回程度の対面活動（世田谷/横浜/二子玉川 キャンパス、他）</li>
+                <li>「クリエイター講習会」……初心者向け講座の開催</li>
+                <li>学内外のイベントの参加</li>
+            </ul>
+            <p>
+                などの活動を行います。
+            </p>
+            <h2 id="scroll-events">イベント</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Month</th>
+                        <th colspan="2">Event</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>6</td>
+                        <td>Spotlight</td>
+                        <td>同好会連合主催のミニ学園祭。去年はトークライブとDJを行いました。</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>コミックマーケット</td>
+                        <td>国内最大級の同人誌即売会</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>東京都市大学 横浜祭</td>
+                        <td> 横浜キャンパスで開催される学園祭。去年は作品展示・グッズ販売・トークライブ・パフォーマンス・プロジェクションマッピングを行いました。</td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td>東京都市大学 世田谷祭</td>
+                        <td>世田谷キャンパスで開催される学園祭。去年はDJ・クイズ・作品展示・グッズ販売・作品発表ライブを行いました。</td>
+                    </tr>
+                    <tr>
+                        <td>11</td>
+                        <td>M3</td>
+                        <td>音メディア系同人誌即売会。去年はコンピレーションアルバムを制作・頒布しました。</td>
+                    </tr>
+                    <tr>
+                        <td>12</td>
+                        <td>コミックマーケット</td>
+                        <td>国内最大級の同人誌即売会</td>
+                    </tr>
+                </tbody>
+            </table>
+            <h2>会費について</h2>
+            <p>入会金1,000円頂きます。ただし、具体的な回収方法は決定次第ご連絡します。</p>
+            <h1>サークル参加方法</h1>
+            <p>参加を希望する方は、<a href="https://tcu-dc.net/joinus/" target="_blank">こちらのフォーム</a>に情報を記入し、送信して下さい。</p>
+        </div>
+        <div id="faq scroll-faq" class="content description">
+            <h1>よくある質問</h1>
+            <div class="faq-q">
+                Q. どのような人にオススメですか？
+            </div>
+            <div class="faq-a">
+                A. パソコンを用いた作品制作を行いたい方にオススメですが、アナログで活動している部員もいます。
+            </div>
+            <div class="faq-q">
+                Q. 部費はかかりますか？
+            </div>
+            <div class="faq-a">
+                A. 年会費としてプログラミング部門、DTM部門問わず1000円を頂いています。部費として徴収する金額はこれだけですが、人によっては活動をするにあたって必要な機材等の購入が必要になるかもしれません。
+                具体的には、満足に制作を行えるスペックのパソコンや、DTM班なら作曲を行うために使うソフト等です。これらの購入は強制ではありませんので、無料のソフトウェアを使ったり、バイトなどでお金を貯めてから買うのもOKです。
+            </div>
+            <div class="faq-q">
+                Q. 制作に使うソフトウェアの規定はありますか？メンバーは何を使っていますか？
+            </div>
+            <div class="faq-a">
+                A. サークルとしては基本的に使用ソフトの規定はしておらず、経験者の方は自分の使っているものを使い続けてOKです。未経験者の方も、メンバーの意見を参考に選ぶことも、自分の興味があるソフトを使うことも自由です。ただし、メンバーと同じものを使うことで、先輩からソフトの操作方法等が学びやすくなるといったメリットもあります。
+                DTM部門のメンバーは『Logic Pro X』『GarageBand』『FL Studio』『Cubase』『StudioOne』等を使用しています。とくに未経験者の方は、何を選べばいいのかわからない場合が多いと思いますので、詳しくは活動時に聞いてみてください。
+            </div>
+            <div class="faq-q">
+                Q. 誰でも参加できますか？
+            </div>
+            <div class="faq-a">
+                A. 活動経験は不問です。デジコン入部と同時に活動を始め、実力をつけている先輩もいます！
+                東京都市大学の学生であればキャンパス、学年を問わずどなたでもご参加いただけます！！
+                ただし、他大学の学生の方は参加することができませんのでご了承ください。
+            </div>
+            <div class="faq-q">
+                Q. 忙しくて活動に出席できない / 毎回の出席が難しい場合はどうすれば？
+            </div>
+            <div class="faq-a">
+                A. 活動に毎回出る必要はまったくありません。非常にゆるいサークルですので気軽に参加してください。数か月に一回の出席でも問題ありませんし、横浜祭や世田谷祭で行われる作品発表のみに参加することも可能です。
+            </div>
+            <div class="faq-q">
+                Q. 入会するためにはどうすればいいのですか？
+            </div>
+            <div class="faq-a">
+                A. 年度の初めだけでなくどのタイミングでも入部は可能です。ご不明な点があれば、お気軽にTwitterやお問合せフォームからご連絡ください。
+            </div>
+        </div>
+    </main>
+    <div id="digicon-chan">
+        <img src="img/digicon-chan.png" alt="デジコンちゃん">
+    </div>
+    <div id="footer-wave"></div>
+    <footer id="footer">
+        <div>
+            <img id="footer-logo" src="img/logo.svg" alt="デジタルコンテンツ研究会 アイコン">
+            <address>
+                <h1>東京都市大学 デジタルコンテンツ研究会</h1>
+                <p>東京都世田谷区玉堤&nbsp;1-28&nbsp;東京都市大学世田谷キャンパス</p>
+            </address>
+        </div>
+        <ul id="footer-nav">
+            <li class="footer-nav-item">
+                <a href="https://tcu-dc.net/about" target="_blank">デジコンとは</a>
+                <ul>
+                    <li><a onclick="pageScroll('illust')">イラスト班</a></li>
+                    <li><a onclick="pageScroll('videos')">動画班</a></li>
+                    <li><a onclick="pageScroll('dtm')">DTM班</a></li>
+                    <li><a onclick="pageScroll('programs')">プログラミング班</a></li>
+                </ul>
+            </li>
+            <li class="footer-nav-item">
+                <a href="https://tcu-dc.net/sns">公式SNS</a>
+                <ul>
+                    <li><a href="https://twitter.com/tcu_dc" target="_blank">Twitter</a></li>
+                    <li><a href="https://www.youtube.com/channel/UCtnxyApBOlGV1e6M2Jf9sTg" target="_blank">YouTube</a></li>
+                    <li><a href="https://lin.ee/Agrg0gY" target="_blank">LINE</a></li>
+                    <li><a href="https://discord.com/invite/CusNqPaBsr" target="_blank">公開Discord</a></li>
+                    <li><a href="https://soundcloud.com/tcudc" target="_blank">SoundCloud</a></li>
+                </ul>
+            </li>
+            <li class="footer-nav-item"><a onclick="pageScroll('faq')">よくある質問</a></li>
+        </ul>
+        <div id="footer-copyright">&copy;2023 デジタルコンテンツ研究会 &#124; <a href="privacy.html">プライバシーポリシー</a></div>
+    </footer>
+    <script src="script/script.js"></script>
+</body>
+</html>
